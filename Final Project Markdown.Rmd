@@ -8,4 +8,14 @@ date: "2026-11-18"
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## 
+## Data Import
+
+The flight data is stored as an `.rds` file. It is **not tracked in Git**
+(about 222 MB), so each teammate needs their own copy of `flights.rds` in the
+project folder.
+
+```{r import-flights}
+flights <- readRDS("flights.rds")
+dim(flights)
+```
+
