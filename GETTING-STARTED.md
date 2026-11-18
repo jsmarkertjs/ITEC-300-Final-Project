@@ -147,7 +147,27 @@ Now you're ready to keep working.
 
 ---
 
-## 5. Avoiding merge conflicts
+## 5. Repo rules: `main` is protected
+
+The `main` branch is **protected** so nobody can accidentally overwrite each
+other's work. Here's what that means for you:
+
+- **No direct pushes to `main`.** If you run `git push origin main`, GitHub will
+  reject it. That's expected — it's not a sign you did something wrong.
+- **Everything goes through a pull request.** All changes (yours and everyone
+  else's) reach `main` only after a PR is created and merged.
+- **Force-pushes are blocked.** History on `main` can't be rewritten, so nothing
+  already merged can be wiped out.
+- **`main` can't be deleted.**
+- The project owner is an **admin** and can bypass these rules in an emergency,
+  but teammates cannot.
+
+In short: **do your work on your own branch, push the branch, and open a PR.**
+That is the only path into `main`.
+
+---
+
+## 6. Avoiding merge conflicts
 
 A **merge conflict** happens when two people changed the *same lines* and Git
 can't decide which to keep. They are fixable, but the goal is to avoid them.
@@ -183,7 +203,7 @@ Don't panic and don't start deleting things.
 
 ---
 
-## 6. Command cheat sheet
+## 7. Command cheat sheet
 
 | What you want | Command |
 | --- | --- |
@@ -197,7 +217,7 @@ Don't panic and don't start deleting things.
 
 ---
 
-## 7. Quick checklist
+## 8. Quick checklist
 
 - [ ] R, RStudio, and Git installed
 - [ ] GitHub account created, invite accepted
