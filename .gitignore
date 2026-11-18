@@ -1,0 +1,31 @@
+# RStudio / R
+.Rproj.user/
+.Rhistory
+.Rapp.history
+.RData
+.Ruserdata
+.Renviron
+
+# R artifacts
+*.Rproj.lock
+*.Rhistory
+*.RData
+*.Ruserdata
+
+# knitr / R Markdown output
+*.utf8.md
+*-knit.R
+*-knit.md
+*-knit.pdf
+*-knit.html
+
+# Session / output
+*.dcf
+
+# Large data (shared separately, not tracked)
+flights.rds
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
