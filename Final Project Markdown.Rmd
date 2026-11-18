@@ -1,0 +1,11 @@
+---
+title: "Final Project Markdown"
+output: pdf_document
+date: "2026-11-18"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## 
